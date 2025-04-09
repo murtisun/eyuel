@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joel's Professional Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+            letter-spacing: -1px;
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            text-align: center;
+            color: rgb(255, 255, 255);
+            position: relative;
+            padding-bottom: 1rem;
+            font-weight: 600;
+            letter-spacing: -0.5px;
+        }
+
+        .about-content p {
+            margin-bottom: 1.5rem;
+            font-size: 1.2rem;
+            line-height: 1.8;
+            font-weight: 400;
+        }
+
+        .contact-text {
+            font-size: 1.2rem;
+            font-weight: 500;
+            color: rgb(255, 255, 255);
+        }
+
+        header p {
+            font-size: 1.3rem;
+            font-weight: 300;
+            letter-spacing: 0.5px;
+        }
+
+        body {
+            background: rgb(20, 20, 20);
+            color: rgb(255, 255, 255);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background: rgb(0, 0, 0);
+            color: rgb(255, 255, 255);
+            padding: 3rem 0;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .about-section, .contact-section, .social-media {
+            background: rgb(30, 30, 30);
+            padding: 3rem;
+            margin: 2rem 0;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .contact-item {
+            background: rgb(40, 40, 40);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .contact-item:hover {
+            background: rgb(50, 50, 50);
+        }
+
+        .social-media {
+            padding: 3rem;
+            margin: 2rem 0;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 2.5rem;
+            margin-top: 2rem;
+        }
+
+        .social-link {
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            font-size: 2rem;
+            transition: all 0.3s ease;
+            padding: 1.2rem;
+            border-radius: 50%;
+            background: rgb(40, 40, 40);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            width: 70px;
+            height: 70px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .social-link:hover {
+            color: rgb(255, 255, 255);
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .social-link.linkedin:hover {
+            background-color: rgb(0, 119, 181);
+        }
+
+        .social-link.github:hover {
+            background-color: rgb(51, 51, 51);
+        }
+
+        .social-link.twitter:hover {
+            background-color: rgb(29, 161, 242);
+        }
+
+        .social-link.instagram:hover {
+            background: linear-gradient(45deg, rgb(240, 148, 51), rgb(230, 104, 60), rgb(220, 39, 67), rgb(204, 35, 102), rgb(188, 24, 136));
+        }
+
+        .social-link.facebook:hover {
+            background-color: rgb(24, 119, 242);
+        }
+
+        .social-link.tiktok:hover {
+            background-color: rgb(0, 0, 0);
+        }
+
+        .icon {
+            font-size: 1.8rem;
+            color: rgb(255, 255, 255);
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .section-title h2 {
+            display: inline-block;
+        }
+
+        h2::after {
+            background: rgb(255, 255, 255);
+        }
+
+        .about-content {
+            color: rgb(224, 224, 224);
+        }
+
+        @media (max-width: 768px) {
+            .contact-info {
+                grid-template-columns: 1fr;
+            }
+            
+            .social-links {
+                flex-wrap: wrap;
+            }
+            
+            h1 {
+                font-size: 2.5rem;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Joel's Portfolio</h1>
+            <p style="font-size: 1.2rem; opacity: 0.9;">Professional Portfolio | Connect with me through various channels</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="about-section">
+            <div class="section-title">
+                <h2>About Me</h2>
+            </div>
+            <div class="about-content">
+                <p>Hello! I'm Joel, a passionate individual based in Bulbula, Ethiopia. With a strong presence on social media platforms like Instagram and TikTok, I enjoy connecting with people and sharing my experiences.</p>
+                <p>I'm dedicated to building meaningful connections and creating engaging content that resonates with my audience. Whether it's through social media or direct communication, I'm always excited to connect and collaborate.</p>
+                <p>Feel free to reach out through any of the contact methods below - I'd love to hear from you!</p>
+            </div>
+        </section>
+
+        <section class="contact-section">
+            <div class="section-title">
+                <h2>Contact Information</h2>
+            </div>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-envelope icon"></i>
+                    <span class="contact-text">joelayalew@gmail.com</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone icon"></i>
+                    <span class="contact-text">+251 946 341 026</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt icon"></i>
+                    <span class="contact-text">Bulbula, Ethiopia</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="social-media">
+            <div class="section-title">
+                <h2>Professional Networks</h2>
+            </div>
+            <div class="social-links">
+                <a href="#" class="social-link linkedin" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="social-link github" title="GitHub"><i class="fab fa-github"></i></a>
+                <a href="#" class="social-link twitter" title="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="https://instagram.com/joel.eyu" class="social-link instagram" title="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-link facebook" title="Facebook"><i class="fab fa-facebook"></i></a>
+                <a href="https://tiktok.com/@ethiopiansigma" class="social-link tiktok" title="TikTok"><i class="fab fa-tiktok"></i></a>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
